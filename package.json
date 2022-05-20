@@ -2,8 +2,13 @@
   "name": "@wulechuan/text-basic-typography",
   "version": "1.0.0",
   "author": "吴乐川 <wulechuan@live.com>",
+  "private": false,
   "license": "WTFPL",
   "description": "此为吴乐川《文本简易分割工具与文本简朴排版工具》，不妨称甲、乙。  甲按特定要求将一个文本（“`string`”）分割成片段，形成文本列表（“`string[]`”）。  乙接受一个文本，要求此文本事先含有特别的记号供乙识别， 并据此类记号在原文本之基础上添加空格与换行符（“`\\n`”）等内容，产出另一新的文本。 由是，当在纯文字环境（例如命令行形式的会话环境）中呈现该产出之新文本时， 这些文字会因具有简朴的排版而视觉效果更佳。  又，乙调用甲。",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "type": "module",
   "main": "源代码/发布的源代码/index.js",
   "types": "源代码/发布的源代码/index.d.ts",
