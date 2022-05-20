@@ -423,13 +423,13 @@ let 各段落文本之列表: string[] = [ 原文本 ]
 
 ```typescript
 export type 范_将原文本改造为包含简朴排版的新文本_排版配置 = {
-    /** @default {0}      【半角数字零】。 */
+    /** @default {0}     【半角数字零】。 */
     整体缩进级数: number;
 
     /** @default {'    '} 四个【半角空格】。 */
     整体缩进之文本: string;
 
-    /** @default {'- '}   【半角减号】后跟一个【半角空格】。 */
+    /** @default {'- '}  【半角减号】后跟一个【半角空格】。 */
     列表引领符: string;
 
     /** @default {'    '} 四个【半角空格】。 */
@@ -470,13 +470,13 @@ export declare function 将原文本改造为包含简朴排版的新文本 ({
 }: {
     原文本?: string;
 
-    /** @default {'- '}   【半角减号】后跟一个【半角空格】。 */
+    /** @default {'- '}  【半角减号】后跟一个【半角空格】。 */
     列表引领符?: string;
 
     /** @default {'    '} 四个【半角空格】。 */
     单层缩进空格数或单层缩进之文本?: string;
 
-    /** @default {0}      【半角数字零】。 */
+    /** @default {0}     【半角数字零】。 */
     整体缩进级数?: number;
 
     /** @default {1}     【半角数字壹】 */
@@ -588,6 +588,8 @@ function 测试任务丁 () {
 本例之输出如下图所示：
 
 ![测试任务3之输出（部分）](./文档集/插图集/测试任务3之输出（部分）.png)
+
+中国大陆境内或可查阅《[存放于码云的图片文件](https://gitee.com/nanchang-wulechuan/wulechuan-typescript-text-basic-typography/blob/master/%E6%96%87%E6%A1%A3%E9%9B%86/%E6%8F%92%E5%9B%BE%E9%9B%86/%E6%B5%8B%E8%AF%95%E4%BB%BB%E5%8A%A13%E4%B9%8B%E8%BE%93%E5%87%BA%EF%BC%88%E9%83%A8%E5%88%86%EF%BC%89.png)》。
 
 
 
