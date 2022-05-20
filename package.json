@@ -1,0 +1,41 @@
+{
+  "name": "@wulechuan/text-basic-typography",
+  "version": "1.0.0",
+  "author": "吴乐川 <wulechuan@live.com>",
+  "license": "WTFPL",
+  "description": "此为吴乐川《文本简易分割工具与文本简朴排版工具》，不妨称甲、乙。  甲按特定要求将一个文本（“`string`”）分割成片段，形成文本列表（“`string[]`”）。  乙接受一个文本，要求此文本事先含有特别的记号供乙识别， 并据此类记号在原文本之基础上添加空格与换行符（“`\\n`”）等内容，产出另一新的文本。 由是，当在纯文字环境（例如命令行形式的会话环境）中呈现该产出之新文本时， 这些文字会因具有简朴的排版而视觉效果更佳。  又，乙调用甲。",
+  "type": "module",
+  "main": "源代码/发布的源代码/index.js",
+  "types": "源代码/发布的源代码/index.d.ts",
+  "scripts": {
+    "_检验代码：凡原始的代码": "eslint  --fix  ./.eslintrc.*js  ./源代码/原始的源代码/**/*.ts  ./测试集/**/*.js",
+    "_检验代码：凡产出的代码": "eslint  --fix  ./源代码/发布的源代码/**/*.js",
+    "检验所有代码": "npm  run  _检验代码：凡原始的代码    &&    npm  run  _检验代码：凡产出的代码",
+    "_简易测试任务：实时监测测试源代码": "nodemon  --watch ./测试集  --watch ./package.json  --watch ./源代码/发布的源代码  ./测试集/index.js",
+    "_简易测试任务：一次性": "node  ./测试集/index.js",
+    "将TypeScript编译成JavaScript": "tsc",
+    "_开始研发：核心任务": "tsc  -w",
+    "_开始研发：扩展任务": "nodemon  --watch ./源代码/发布的源代码/**/*.js  --exec \"npm  run  _检验代码：凡产出的代码\"",
+    "test": "npm  run  _检验代码：凡原始的代码    &&    npm  run  将TypeScript编译成JavaScript    &&   npm  run  _检验代码：凡产出的代码    &&    npm  run  _简易测试任务：一次性",
+    "start": "npm  run  _开始研发：核心任务    |    npm  run  _开始研发：扩展任务    |    npm  run  _简易测试任务：实时监测测试源代码",
+    "每当制作集得之版本之前": "npm  i    &&    npm  test",
+    "prepublishOnly": "npm       i    &&    npm  test"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "@wulechuan/cli-scripts--git-push": "^5.0.1",
+    "@wulechuan/css-stylus-markdown-themes": "^7.8.2",
+    "eslint": "^8.15.0",
+    "nodemon": "^2.0.16",
+    "typescript": "^4.6.4"
+  },
+  "keywords": [
+    "文本按汉字标点符号换行",
+    "文本简朴排版",
+    "文本简易排版",
+    "纯文本环境的排版",
+    "适用于命令行环境",
+    "文字排版"
+  ]
+}

@@ -1,0 +1,75 @@
+/**
+ * 参阅： https://go.microsoft.com/fwlink/?LinkId=733558
+ */
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "开始研发",
+            "group": "build",
+            "dependsOrder": "parallel",
+            "dependsOn": [
+                "_开始研发：核心任务",
+                "_开始研发：扩展任务",
+                "_简易测试任务：实时监测测试源代码"
+            ]
+        },
+        {
+            "label": "_开始研发：核心任务",
+            "type": "shell",
+            "command": "npm  run  _开始研发：核心任务",
+            "group": "none",
+            "problemMatcher": []
+        },
+        {
+            "label": "_开始研发：扩展任务",
+            "type": "shell",
+            "command": "npm  run  _开始研发：扩展任务",
+            "group": "none",
+            "problemMatcher": []
+        },
+        {
+            "label": "_简易测试任务：实时监测测试源代码",
+            "type": "shell",
+            "command": "npm  run  _简易测试任务：实时监测测试源代码",
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "将 TypeScript 编译成 JavaScript",
+            "type": "shell",
+            "command": "npm  run  将TypeScript编译成JavaScript",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "更新所有npm依赖包至最新版本（PowerShell）",
+            "type": "shell",
+            "command": ".\\用于研发阶段的命令行工具集\\PowerShell\\Update-更新所有npm依赖包至最新版本.ps1  -安装之前先删除旧有的_node_modules_文件夹",
+            "group": "none",
+            "problemMatcher": []
+        },
+        {
+            "label": "每当制作集得之版本之前",
+            "type": "shell",
+            "command": "npm  run  每当制作集得之版本之前",
+            "group": "none",
+            "problemMatcher": []
+        },
+        {
+            "label": "将代码依次推送至多个集得源（PowerShell）",
+            "type": "shell",
+            "command": "pwsh  -Command '.\\用于研发阶段的命令行工具集\\PowerShell\\Push-将代码依次推送至多个集得源.ps1'",
+            "group": "none",
+            "problemMatcher": []
+        }
+        // {
+        //     "label": "将代码依次推送至多个集得源（Bash）",
+        //     "type": "shell",
+        //     "command": "bash  -c 'source  ./用于研发阶段的命令行工具集/bash/push-将代码依次推送至多个集得源.sh'",
+        //     "group": "none",
+        //     "problemMatcher": []
+        // }
+    ]
+}
