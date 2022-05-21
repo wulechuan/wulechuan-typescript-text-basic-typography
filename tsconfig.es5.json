@@ -1,13 +1,13 @@
 {
     "compilerOptions": {
-        "target": "es2019",
-        "strict": false,
-        "esModuleInterop": true,
+        "target": "ES5",
+        "strict": true,
+        "esModuleInterop": false,
         "noImplicitAny": false,
         "importHelpers": false,
         "sourceMap": false,
-        "declaration": true,
-        "removeComments": false,
+        "declaration": false,
+        "removeComments": true,
         "outDir": "./源代码/发布的源代码"
     },
 }

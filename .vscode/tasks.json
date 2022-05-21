@@ -11,6 +11,7 @@
             "dependsOrder": "parallel",
             "dependsOn": [
                 "_开始研发：核心任务",
+                // "_开始研发：核心任务：ES5",
                 "_开始研发：扩展任务",
                 "_简易测试任务：实时监测测试源代码"
             ]
@@ -19,6 +20,13 @@
             "label": "_开始研发：核心任务",
             "type": "shell",
             "command": "npm  run  _开始研发：核心任务",
+            "group": "none",
+            "problemMatcher": []
+        },
+        {
+            "label": "_开始研发：核心任务：ES5",
+            "type": "shell",
+            "command": "npm  run  _开始研发：核心任务：ES5",
             "group": "none",
             "problemMatcher": []
         },
@@ -38,9 +46,31 @@
         },
         {
             "label": "将 TypeScript 编译成 JavaScript",
+            "group": "build",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "将 TypeScript 编译成 JavaScript：须优先",
+                "将 TypeScript 编译成 JavaScript：须稍后",
+            ],
+        },
+        {
+            "label": "将 TypeScript 编译成 JavaScript：须优先",
+            "type": "shell",
+            "command": "npm  run  将TypeScript编译成JavaScript：ES5",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "将 TypeScript 编译成 JavaScript：须稍后",
             "type": "shell",
             "command": "npm  run  将TypeScript编译成JavaScript",
-            "group": "build",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
             "problemMatcher": []
         },
         {
