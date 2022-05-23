@@ -362,6 +362,11 @@ const 对文本列表逐项分割并将结果列表展平 = 简朴排版工具�
 import {
     对文本列表逐项分割并将结果列表展平,
 } from '@wulechuan/text-basic-typography'
+
+// 也可以采取如下之写法。
+import {
+    对文本列表逐项分割并将结果列表展平,
+} from '@wulechuan/text-basic-typography/源代码/原始的源代码/index.ts'
 ```
 
 ###### 工具甲之用法示范 1
@@ -596,6 +601,11 @@ const 将原文本改造为包含简朴排版的新文本 = 简朴排版工具�
 import {
     将原文本改造为包含简朴排版的新文本,
 } from '@wulechuan/text-basic-typography'
+
+// 也可以采取如下之写法。
+import {
+    将原文本改造为包含简朴排版的新文本,
+} from '@wulechuan/text-basic-typography/源代码/原始的源代码/index.ts'
 ```
 
 ###### 工具乙之用法示范 1
