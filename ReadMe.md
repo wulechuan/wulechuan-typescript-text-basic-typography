@@ -679,9 +679,16 @@ function 测试任务丁 () {
 
 ![测试任务3之输出（部分）](./文档集/插图集/测试任务3之输出（部分）.png)
 
-不妨查阅《[存放于 GitHub 上的图片文件](https://github.com/wulechuan/wulechuan-typescript-text-basic-typography/blob/master/%E6%96%87%E6%A1%A3%E9%9B%86/%E6%8F%92%E5%9B%BE%E9%9B%86/%E6%B5%8B%E8%AF%95%E4%BB%BB%E5%8A%A13%E4%B9%8B%E8%BE%93%E5%87%BA%EF%BC%88%E9%83%A8%E5%88%86%EF%BC%89.png)》。
+如果图片加载太慢，或干脆打不开。不妨改为在以下地方查阅该图片。
 
-中国大陆境内者推荐查阅《[存放于码云上的图片文件](https://gitee.com/nanchang-wulechuan/wulechuan-typescript-text-basic-typography/blob/master/%E6%96%87%E6%A1%A3%E9%9B%86/%E6%8F%92%E5%9B%BE%E9%9B%86/%E6%B5%8B%E8%AF%95%E4%BB%BB%E5%8A%A13%E4%B9%8B%E8%BE%93%E5%87%BA%EF%BC%88%E9%83%A8%E5%88%86%EF%BC%89.png)》。
+-   中国大陆境内者推荐查阅《码云》上存放的图片。
+
+    1.  《[测试任务3之输出（部分）.png](https://gitee.com/nanchang-wulechuan/wulechuan-typescript-text-basic-typography/blob/master/%E6%96%87%E6%A1%A3%E9%9B%86/%E6%8F%92%E5%9B%BE%E9%9B%86/%E6%B5%8B%E8%AF%95%E4%BB%BB%E5%8A%A13%E4%B9%8B%E8%BE%93%E5%87%BA%EF%BC%88%E9%83%A8%E5%88%86%EF%BC%89.png)》。
+
+-   存放于《GitHub》上的图片。
+
+    1.  《[测试任务3之输出（部分）.png](https://github.com/wulechuan/wulechuan-typescript-text-basic-typography/blob/master/%E6%96%87%E6%A1%A3%E9%9B%86/%E6%8F%92%E5%9B%BE%E9%9B%86/%E6%B5%8B%E8%AF%95%E4%BB%BB%E5%8A%A13%E4%B9%8B%E8%BE%93%E5%87%BA%EF%BC%88%E9%83%A8%E5%88%86%EF%BC%89.png)》。
+
 
 
 
